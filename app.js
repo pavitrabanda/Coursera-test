@@ -12,7 +12,7 @@
       var str= $scope.inputval;
       var splitted = str.split(",");
       var arraynum = splitted.length;
-      
+
       if (arraynum == 1 && splitted[0].length == 0){
         $scope.message="Please enter data first";
       }
