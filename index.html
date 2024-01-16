@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="Foodcheck">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js">
+    </script>
+    <link rel="stylesheet" href="app.css">
+
+    </style>
+    <title>Coursera</title>
+  </head>
+  <body>
+    <div class="login-box">
+      <h2>List the food with comma-separating every item</h2>
+      <form>
+          <div ng-controller="FoodController" class="myDiv">
+            <div class="user-box">
+              <input type="text"  ng-model="inputval"><br><br>
+            </div>
+            <div class="user-box">
+              <button type="button" ng-click="CheckTheResult()" class="button">Check If Too Much</button><br><br>
+            </div>
+            <h2>{{message}}</h2>
+          </div>
+        </form>
+  </div>
+  </body>
+</html>
